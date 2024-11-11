@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "F1CalendarWebApp"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "F1CalendarWebApp-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
